@@ -1,0 +1,38 @@
+{
+  "name": "smartparent-landing",
+  "version": "1.0.0",
+  "description": "Landing page for SmartParent - AI-powered parenting app validation",
+  "main": "index.html",
+  "scripts": {
+    "dev": "firebase serve --only hosting",
+    "build": "echo 'No build process needed for static site'",
+    "deploy": "firebase deploy --only hosting",
+    "install-firebase": "npm install -g firebase-tools",
+    "init-firebase": "firebase init hosting",
+    "serve": "python3 -m http.server 8000 || python -m http.server 8000 || npx serve ."
+  },
+  "keywords": [
+    "landing-page",
+    "firebase",
+    "parenting",
+    "ai",
+    "validation",
+    "mvp"
+  ],
+  "author": "SmartParent Team",
+  "license": "MIT",
+  "dependencies": {
+    "firebase": "^10.7.1"
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/smartparent-landing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/smartparent-landing/issues"
+  },
+  "homepage": "https://smartparent.pl"
+}

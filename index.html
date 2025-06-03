@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartParent - Inteligentna Aplikacja dla Rodziców</title>
+    <meta name="description" content="Pierwsza w Polsce aplikacja AI dla rodziców. Zapisz się na listę oczekujących i bądź pierwszym, który skorzysta z inteligentnego wsparcia w rodzicielstwie.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://smartparent.pl/">
+    <meta property="og:title" content="SmartParent - Inteligentna Aplikacja dla Rodziców">
+    <meta property="og:description" content="Pierwsza w Polsce aplikacja AI dla rodziców. Zapisz się na listę oczekujących i bądź pierwszym, który skorzysta z inteligentnego wsparcia w rodzicielstwie.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID'); // Replace with your actual GA Measurement ID
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>🤖 SmartParent</h1>
+                </div>
+                <nav class="nav">
+                    <a href="#features" class="nav-link">Funkcje</a>
+                    <a href="#pricing" class="nav-link">Cennik</a>
+                    <a href="#contact" class="nav-link">Kontakt</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Pierwsza w Polsce <span class="highlight">Aplikacja AI</span> dla Rodziców
+                    </h1>
+                    <p class="hero-description">
+                        Inteligentne wsparcie w codziennym rodzicielstwie. Personalizowane porady, tracking rozwoju dziecka, 
+                        smart przypomnienia i społeczność rodziców w jednej aplikacji.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Rodziców na liście</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">AI</span>
+                            <span class="stat-label">Powered</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Dostępność</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-form">
+                    <div class="signup-card">
+                        <h3>Zapisz się na listę oczekujących</h3>
+                        <p>Bądź pierwszym, który otrzyma dostęp do beta wersji!</p>
+                        <form id="email-signup-form" class="signup-form">
+                            <div class="form-group">
+                                <input 
+                                    type="email" 
+                                    id="email-input" 
+                                    name="email" 
+                                    placeholder="twoj.email@example.com" 
+                                    required
+                                    class="form-input"
+                                >
+                            </div>
+                            <button type="submit" id="signup-button" class="btn btn-primary">
+                                Zapisz się na listę
+                            </button>
+                        </form>
+                        <div class="privacy-note">
+                            <small>✅ Nie wysyłamy spamu. Anuluj subskrypcję w każdej chwili.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem">
+        <div class="container">
+            <div class="section-header">
+                <h2>Czy to brzmi znajomo?</h2>
+            </div>
+            <div class="problem-grid">
+                <div class="problem-item">
+                    <div class="problem-icon">😰</div>
+                    <h3>Chaos w organizacji</h3>
+                    <p>Gubisz się w terminach wizyt, szczepieniach i ważnych etapach rozwoju dziecka?</p>
+                </div>
+                <div class="problem-item">
+                    <div class="problem-icon">❓</div>
+                    <h3>Brak pewności</h3>
+                    <p>Zastanawiasz się czy reagujesz właściwie na zachowania i potrzeby swojego dziecka?</p>
+                </div>
+                <div class="problem-item">
+                    <div class="problem-icon">⏰</div>
+                    <h3>Brak czasu</h3>
+                    <p>Nie masz czasu szukać wiarygodnych informacji o rozwoju i wychowaniu dzieci?</p>
+                </div>
+                <div class="problem-item">
+                    <div class="problem-icon">🔍</div>
+                    <h3>Informacyjny chaos</h3>
+                    <p>Przytłacza Cię ilość sprzecznych porad z różnych źródeł?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="features" class="solution">
+        <div class="container">
+            <div class="section-header">
+                <h2>SmartParent to Twoje <span class="highlight">Inteligentne Wsparcie</span></h2>
+                <p>Jedna aplikacja, która organizuje całe Twoje rodzicielstwo</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI Asystent Rodzica</h3>
+                    <p>Personalizowane porady na podstawie wieku dziecka, jego charakteru i Twoich preferencji wychowawczych.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📊</div>
+                    <h3>Smart Tracking Rozwoju</h3>
+                    <p>Automatyczne śledzenie kamieni milowych, wzrostu, wagi i innych wskaźników rozwoju z inteligentnymi alertami.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Inteligentne Przypomnienia</h3>
+                    <p>AI przypomni o wizytach, szczepieniach i ważnych czynnościach, dostosowując się do Twojego rytmu dnia.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">👥</div>
+                    <h3>Społeczność Rodziców</h3>
+                    <p>Połącz się z rodzicami w podobnej sytuacji, wymieniaj doświadczenia i znajdź wsparcie.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📚</div>
+                    <h3>Biblioteka Wiedzy</h3>
+                    <p>Sprawdzone, eksperckie treści dostosowane do wieku Twojego dziecka i aktualnych wyzwań.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Prywatność i Bezpieczeństwo</h3>
+                    <p>Wszystkie dane są szyfrowane i bezpieczne. Pełna kontrola nad prywatnością Twojej rodziny.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>Jak to działa?</h2>
+            </div>
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <h3>Utwórz profil dziecka</h3>
+                    <p>Podaj podstawowe informacje o swoim dziecku - wiek, charakter, preferencje.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <h3>AI poznaje Twoje potrzeby</h3>
+                    <p>Inteligentny algorytm analizuje Twoje wzorce i dostosowuje wsparcie.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <h3>Otrzymuj spersonalizowane wsparcie</h3>
+                    <p>Codzienne porady, przypomnienia i rozwiązania dopasowane do Twojej sytuacji.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Wybierz plan dla siebie</h2>
+                <p>Rozpocznij z darmową wersją, przejdź na Pro gdy będziesz gotowy</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <div class="price">
+                            <span class="currency">Darmowy</span>
+                        </div>
+                        <p>Idealne na start</p>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>✅ Podstawowe tracking rozwoju</li>
+                            <li>✅ Proste przypomnienia</li>
+                            <li>✅ Dostęp do społeczności</li>
+                            <li>❌ AI Asystent</li>
+                            <li>❌ Zaawansowane analizy</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-outline">Zawsze darmowy</button>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Najpopularniejszy</div>
+                    <div class="pricing-header">
+                        <h3>Pro</h3>
+                        <div class="price">
+                            <span class="amount">39</span>
+                            <span class="currency">zł/miesiąc</span>
+                        </div>
+                        <p>Pełna moc AI</p>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>✅ Wszystko z planu Starter</li>
+                            <li>✅ AI Asystent Rodzica</li>
+                            <li>✅ Inteligentne analizy</li>
+                            <li>✅ Personalizowane porady</li>
+                            <li>✅ Priorytetowe wsparcie</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-primary">Wybierz Pro</button>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Family</h3>
+                        <div class="price">
+                            <span class="amount">59</span>
+                            <span class="currency">zł/miesiąc</span>
+                        </div>
+                        <p>Dla całej rodziny</p>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>✅ Wszystko z planu Pro</li>
+                            <li>✅ Do 4 dzieci w jednym koncie</li>
+                            <li>✅ Udostępnianie z partnerem</li>
+                            <li>✅ Zaawansowane raporty</li>
+                            <li>✅ Dedykowany doradca</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-outline">Wybierz Family</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Co mówią rodzice?</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p>"Wreszcie ktoś zrozumiał, czego naprawdę potrzebują rodzice. AI asystent to game-changer!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Anna K.</h4>
+                            <span>Mama 2-letniej Zosi</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p>"Nie wyobrażam sobie już życia bez SmartParent. Oszczędza mi mnóstwo czasu i nerwów."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Marcin D.</h4>
+                            <span>Tata 5-letniego Maćka</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p>"Społeczność rodziców to goldmine. Znalazłam tu odpowiedzi na pytania, których się wstydziłam zadać."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Kasia M.</h4>
+                            <span>Mama bliźniaków</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Gotowy/a na inteligentne rodzicielstwo?</h2>
+                <p>Dołącz do ponad 500 rodziców oczekujących na dostęp do beta wersji</p>
+                <button onclick="scrollToTop()" class="btn btn-primary btn-large">Zapisz się teraz</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Masz pytania?</h2>
+                    <p>Skontaktuj się z nami lub zostaw wiadomość. Odpowiemy w ciągu 24 godzin.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">✉️</span>
+                            <span>hello@smartparent.pl</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">💬</span>
+                            <span>Live chat dostępny 9-17</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="email" name="contact-email" placeholder="Twój adres e-mail" required class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="contact-message" placeholder="Twoja wiadomość..." rows="5" required class="form-input"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Wyślij wiadomość</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🤖 SmartParent</h3>
+                    <p>Inteligentne wsparcie dla nowoczesnych rodziców</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Produkt</h4>
+                    <ul>
+                        <li><a href="#features">Funkcje</a></li>
+                        <li><a href="#pricing">Cennik</a></li>
+                        <li><a href="/privacy.html">Prywatność</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <ul>
+                        <li>hello@smartparent.pl</li>
+                        <li>LinkedIn</li>
+                        <li>Facebook</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SmartParent. Wszystkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Survey Modal -->
+    <div id="survey-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Pomóż nam stworzyć idealne rozwiązanie! 🎯</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>Twoja opinia jest dla nas bardzo ważna. Wypełnienie ankiety zajmie tylko 2 minuty.</p>
+                <form id="survey-form" class="survey-form">
+                    <input type="hidden" id="survey-email" name="survey-email">
+                    
+                    <div class="form-group">
+                        <label>Ile byłbyś/byłabyś skłonny/a zapłacić miesięcznie za pełną wersję z AI?</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="price-willingness" value="0-20">
+                                <span>0-20 zł</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="price-willingness" value="21-40">
+                                <span>21-40 zł</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="price-willingness" value="41-60">
+                                <span>41-60 zł</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="price-willingness" value="60+">
+                                <span>60+ zł</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Która funkcja jest dla Ciebie najważniejsza?</label>
+                        <select name="important-feature" required class="form-input">
+                            <option value="">Wybierz opcję</option>
+                            <option value="ai-assistant">AI Asystent Rodzica</option>
+                            <option value="development-tracking">Tracking rozwoju dziecka</option>
+                            <option value="smart-reminders">Inteligentne przypomnienia</option>
+                            <option value="community">Społeczność rodziców</option>
+                            <option value="knowledge-base">Biblioteka wiedzy</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Jak obecnie rozwiązujesz problemy związane z rodzicielstwem?</label>
+                        <textarea name="current-solution" placeholder="Np. szukam w Google, pytam znajomych, czytam blogi..." class="form-input" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Dodatkowe uwagi lub sugestie:</label>
+                        <textarea name="additional-feedback" placeholder="Co jeszcze powinniśmy wiedzieć o Twoich potrzebach?" class="form-input" rows="3"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Wyślij ankietę</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="js/firebase-config.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            setTimeout(() => {
+                document.getElementById('email-input').focus();
+            }, 500);
+        }
+    </script>
+</body>
+</html>
